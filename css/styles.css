@@ -1,0 +1,259 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background: url('../img/floor-light-grey-big.jpg');
+    background-size:  cover;
+    color: black;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 43%;
+}
+
+#myCarousel {
+    padding: 0;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+.logo {
+    width: 60%;
+    height: auto;
+}
+
+.home-text {
+    font-size: 1.5em;
+}
+
+.home-text span {
+    float: right;
+    clear: both;
+}
+
+.video-text {
+    clear: both;
+}
+
+.special {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: auto;
+}
+
+.service-text {
+    margin-top: 10%;
+}
+
+.home-panel {
+    margin-bottom: 13px;
+}
+
+.contact-panel {
+    margin-top: 1%;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.panel {
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+}
+
+.footer>span {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+
+address {
+    float: right;
+}
+
+/* accessories page styles */
+
+.carousel-caption {
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+.accessories-div {
+    border: none;
+}
+
+.delivery {
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.delivery b {
+    color: red;
+}
+
+.table tbody tr td {
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.navbar-brand {
+    padding: 3px;
+}
+
+.ov-logo {
+    margin-top: 2%;
+}
+
+.mobile-deal {
+    width: 100%;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive Styles */
+
+@media(min-height:915px) and (min-width:1800px) {
+    .home-body {
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 1700px) {
+        
+    .special {
+        width: 25%;
+    }
+}
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+    
+    .contact-panel {
+        margin-top: 8%;
+    }
+    
+    .home-text span {
+        float: none;
+        clear: none;
+    }
+    
+    header.carousel {
+        margin-top: 4%;
+    }
+    
+        
+    .special {
+        top: 15px;
+        width: 18%;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+    
+    .contact-panel {
+        margin-top: 2%;
+    }
+    
+        
+    header.carousel {
+        margin-top: 0;
+    }
+    
+    .special {
+        width: 23%;
+    }
+
+}
+
+@media(max-width:400px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 50%;
+    }
+    
+    .navbar-brand {
+        width: 35%;
+        padding-top: 10px;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+    
+    .page-header {
+        font-size: 2em;
+    }
+    
+    .special {
+        display: hidden;
+    }
+
+}
+
