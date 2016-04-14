@@ -22,21 +22,29 @@ body {
 
 /* Home Page Carousel */
 
-header.carousel {
-    height: 43%;
+div.carousel {
+    display: inline-block;
+    width: 50vw;
+    height: 63vh;
+    margin: 10vh 0 0 2vw;
+}
+
+.navbar, .footer {
+    height: 10vh;
+    /*    background-color: gray; !important*/
 }
 
 #myCarousel {
     padding: 0;
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
+div.carousel .item,
+div.carousel .item.active,
+div.carousel .carousel-inner {
     height: 100%;
 }
 
-header.carousel .fill {
+div.carousel .fill {
     width: 100%;
     height: 100%;
     background-position: center;
@@ -49,10 +57,37 @@ header.carousel .fill {
     text-align: center;
 }
 
-/* Footer Styles */
+.home-content {
+    width: 45vw;
+    height: 80vh;
+    /*
+        border: 1px solid lightgray;
+        background-color: rgba(255, 255, 255,0.8);
+    */
+    margin-top: 2vh;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    right: 200%;
+}
 
-footer {
-    margin: 50px 0;
+.home-title, .home-p-one, .home-p-two {
+    border: 1px solid lightgray;
+    background-color: rgba(0, 0, 0,0.7);
+    margin-top: 2vh;
+    padding: 5px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
 }
 
 .logo {
@@ -61,7 +96,7 @@ footer {
 }
 
 .home-text {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .home-text span {
@@ -101,10 +136,6 @@ footer {
     opacity: 0.8;
 }
 
-.footer {
-    background-color: #222;
-    color: white;
-}
 
 .footer>span {
     display: inline;
@@ -116,6 +147,7 @@ footer {
     justify-content: space-between;
     flex-flow: row wrap;
     align-content: space-around;
+    padding-top: 2vh;
 }
 
 address {
@@ -173,7 +205,7 @@ address {
 }
 
 @media(max-width: 1700px) {
-        
+
     .special {
         width: 25%;
     }
@@ -184,21 +216,21 @@ address {
     .img-related {
         margin-bottom: 30px;
     }
-    
+
     .contact-panel {
         margin-top: 8%;
     }
-    
+
     .home-text span {
         float: none;
         clear: none;
     }
-    
-    header.carousel {
+
+    div.carousel {
         margin-top: 4%;
     }
-    
-        
+
+
     .special {
         top: 15px;
         width: 18%;
@@ -210,19 +242,19 @@ address {
         margin-bottom: 15px;
     }
 
-    header.carousel .carousel {
+    div.carousel .carousel {
         height: 70%;
     }
-    
+
     .contact-panel {
         margin-top: 2%;
     }
-    
-        
+
+
     header.carousel {
         margin-top: 0;
     }
-    
+
     .special {
         width: 23%;
     }
@@ -237,23 +269,137 @@ address {
     header.carousel .carousel {
         height: 50%;
     }
-    
+
     .navbar-brand {
         width: 35%;
         padding-top: 10px;
     }
-    
+
     .logo {
         width: 100%;
     }
-    
+
     .page-header {
         font-size: 2em;
     }
-    
+
     .special {
         display: hidden;
     }
 
 }
 
+
+/* animations */
+
+@-webkit-keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+.return {
+    -webkit-animation-name: return;
+    animation-name: return;
+}
+
+@keyframes return {
+    from {
+        right: -200%;
+    }
+    to {
+        right: 0;
+    }
+}
