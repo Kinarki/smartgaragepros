@@ -22,16 +22,22 @@ body {
 
 /* Home Page Carousel */
 
-div.carousel {
+div.left-side {
     display: inline-block;
     width: 50vw;
     height: 63vh;
     margin: 10vh 0 0 2vw;
 }
 
+div.right-side {
+    display: inline-block;
+    width: 50vw;
+    height: 63vh;
+    margin: 10vh 2vw 0 0;
+}
+
 .navbar, .footer {
     height: 10vh;
-    /*    background-color: gray; !important*/
 }
 
 #myCarousel {
@@ -60,16 +66,13 @@ div.carousel .fill {
 .home-content {
     width: 45vw;
     height: 80vh;
-    /*
-        border: 1px solid lightgray;
-        background-color: rgba(255, 255, 255,0.8);
-    */
     margin-top: 4vh;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
     right: 200%;
 }
 
-.home-title, .home-p-one, .home-p-two {
+.black-box {
     border: 1px solid lightgray;
     background-color: rgba(0, 0, 0,0.7);
     margin-top: 2vh;
@@ -79,6 +82,30 @@ div.carousel .fill {
 
 }
 
+.flooring-panel {
+    height: 75vh;
+    overflow-y: scroll;
+    margin-top: 6vh;
+}
+
+.garage-flooring {
+    margin: 0;
+}
+
+.flooring-sub {
+    height: 200%;
+    text-align: center;
+}
+
+
+.lightblue:hover {
+    color: lightgreen;
+}
+
+.lightblue {
+    color: lightblue;
+}
+
 /* Footer Styles */
 .footer {
     position: fixed;
@@ -86,6 +113,7 @@ div.carousel .fill {
     width: 100%;
     background-color: #222;
     color: white;
+    padding-left: 0;
 }
 
 .logo {
@@ -123,7 +151,17 @@ div.carousel .fill {
 }
 
 .contact-panel {
-    margin-top: 1%;
+    height: 75vh;
+    margin-top: 5vh;
+}
+
+.contact-div {
+    height: 65vh;
+}
+
+.overhead-panel {
+    margin: 9vh 0 0 2vw;
+    left: -200%;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -134,6 +172,17 @@ div.carousel .fill {
     opacity: 0.8;
 }
 
+.modal-content {
+    width: 85%;
+}
+
+#modal-video {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+}
 
 .footer>span {
     display: inline;
@@ -160,6 +209,9 @@ address {
 
 .accessories-div {
     border: none;
+    height: 75vh;
+    overflow-y: scroll;
+    margin: 6vh 0 0 5vh;
 }
 
 .delivery {
@@ -179,10 +231,6 @@ address {
 
 .navbar-brand {
     padding: 3px;
-}
-
-.ov-logo {
-    margin-top: 2%;
 }
 
 .mobile-deal {
@@ -356,6 +404,20 @@ address {
     animation-fill-mode: both;
 }
 
+.animated2 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
 .animated.infinite {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -388,16 +450,58 @@ address {
 }
 
 
-.return {
-    -webkit-animation-name: return;
-    animation-name: return;
+.return-right {
+    -webkit-animation-name: return-right;
+    animation-name: return-right;
 }
 
-@keyframes return {
+@keyframes return-right {
     from {
         right: -200%;
     }
     to {
         right: 0;
+    }
+}
+
+.return-left {
+    -webkit-animation-name: return-left;
+    animation-name: return-left;
+}
+
+@keyframes return-left {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.fade-full {
+    -webkit-animation-name: fade-full;
+    animation-name: fade-full;
+}
+
+@keyframes fade-full {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
     }
 }
