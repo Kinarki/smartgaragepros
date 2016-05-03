@@ -14,6 +14,26 @@ body {
     color: black;
 }
 
+.audiowide {
+    font-family: 'Audiowide', cursive;
+}
+
+.orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.marcellus {
+    font-family: 'Marcellus SC', serif;
+}
+
 /* Home Page Carousel */
 
 div.left-side {
@@ -71,7 +91,7 @@ div.carousel .fill {
     background-color: rgba(0, 0, 0,0.7);
     margin-top: 2vh;
     padding: 5px;
-    color: white;
+    color: #FFFF3C;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -130,13 +150,20 @@ div.carousel .fill {
 
 .slogan>h1:first-child {
     position: absolute;
+    width: 100%;
+    height: 8vh;
+    color: #FF0000;
     background-color: #222;
     z-index: 500;
+    font-family: 'Shadows Imto Light', cursive;
 }
 
 .slogan>h1:last-child {
+    color: #FFFF3C;
     position: absolute;
+    left: 75px;
     z-index: 100;
+    font-family: 'Sigmar One', cursive;
 }
 
 .home-text {
@@ -219,10 +246,15 @@ address {
     float: right;
 }
 
+.list-social-icons>li>a {
+    color: #FF0000;
+}
+
 /* accessories page styles */
 
 .carousel-caption {
-    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    color: #FFFF3C;
+    text-shadow: -1.5px 0 black, 0 1px black, 1px 0 black, 0 -1.5px black;
 }
 
 .accessories-div {
