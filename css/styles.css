@@ -1,10 +1,12 @@
+/* Initial styling set up for screen size 1367 x 617 */
+
 /* Global Styles */
 
 html,
 body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -12,80 +14,18 @@ body {
     background: url('../img/floor-light-grey-big.jpg');
     background-size:  cover;
     color: black;
-}
-
-.audiowide {
-    font-family: 'Audiowide', cursive;
-}
-
-.orbitron {
-    font-family: 'Orbitron', sans-serif;
-}
-
-.cinzel {
-    font-family: 'Cinzel', serif;
-}
-
-.roboto {
     font-family: 'Roboto', sans-serif;
-}
-
-.marcellus {
-    font-family: 'Marcellus SC', serif;
-}
-
-/* Home Page Carousel */
-
-div.left-side {
-    display: inline-block;
-    width: 50vw;
-    height: 63vh;
-    margin: 10vh 0 0 2vw;
-}
-
-div.right-side {
-    display: inline-block;
-    width: 50vw;
-    height: 63vh;
-    margin: 10vh 2vw 0 0;
-}
-
-.navbar, .footer {
-    height: 10vh;
-}
-
-#myCarousel {
-    padding: 0;
-}
-
-div.carousel .item,
-div.carousel .item.active,
-div.carousel .carousel-inner {
-    height: 100%;
-}
-
-div.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-color: lightgray;
 }
 
 .center {
     text-align: center;
 }
 
-.home-content {
-    width: 45vw;
-    height: 80vh;
-    margin-top: 3vh;
-    position: relative;
-    overflow: hidden;
-    right: 200%;
+.panel {
+    opacity: 0.8;
 }
 
+/* content div styling */
 .black-box {
     border: 1px solid lightgray;
     background-color: rgba(0, 0, 0,0.7);
@@ -95,40 +35,62 @@ div.carousel .fill {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.flooring-panel {
-    height: 75vh;
-    overflow-y: scroll;
-    margin-top: 6vh;
+/* box shadow */
+.shadow {
+    box-shadow: 3px 4px 18px 5px black;
 }
 
-.garage-flooring {
-    margin: 0;
+/* scrollbar styles */
+
+::-webkit-scrollbar {
+    width: 1em;
 }
 
-.flooring-sub {
-    height: 200%;
-    text-align: center;
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-
-.lightblue:hover {
-    color: lightgreen;
+::-webkit-scrollbar-track-piece {
+    background-color: #555;
 }
 
-.lightblue {
-    color: lightblue;
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
 
-/* Footer Styles */
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #222;
+::-webkit-scrollbar-button {
+    background-color: darkgray;
+    outline: 1px solid black;
+}
+
+/* end global styles */
+
+/* Navbar Styles */
+
+.navbar-brand {
+    padding: 3px;
+}
+
+.navbar-header {
+    margin-top: 3px;
+}
+
+.navbar, .footer {
+    height: 10vh;
+}
+
+.navbar>.container {
+    width: 98%;
+    margin-left: auto;
+    padding-right: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
     color: white;
-    padding-left: 0;
 }
 
+/* logo css */
 .logo {
     width: 60%;
     height: auto;
@@ -136,15 +98,12 @@ div.carousel .fill {
     position: relative;
 }
 
-.shadow {
-    box-shadow: 5px 5px 5px 5px black;
-}
-
+/* slogan css */
 .slogan {
     position: absolute;
     color: white;
     top: 12px;
-    left: 315px;
+    left: 275px;
     width: 25vw;
 }
 
@@ -170,67 +129,61 @@ div.carousel .fill {
     font-family: 'Sigmar One', cursive;
 }
 
-.home-text {
-    font-size: 1.3em;
+/* end navbar styles */
+
+/* Carousel Styles */
+
+#myCarousel {
+    padding: 0;
 }
 
-.home-text span {
-    float: right;
-    clear: both;
+div.carousel .item,
+div.carousel .item.active,
+div.carousel .carousel-inner {
+    height: 100%;
 }
 
-.video-text {
-    clear: both;
+div.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: lightgray;
 }
 
-.special {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: auto;
+.carousel-caption {
+    color: #FFFF3C;
+    text-shadow: -1.5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.service-text {
-    margin-top: 10%;
+/* carousel classes for alternate side positioning */
+
+div.left-side {
+    display: inline-block;
+    width: 50vw;
+    height: 63vh;
+    margin: 10vh 0 0 2vw;
 }
 
-.home-panel {
-    margin-bottom: 13px;
+div.right-side {
+    display: inline-block;
+    width: 50vw;
+    height: 63vh;
+    margin: 10vh 2vw 0 0;
 }
 
-.contact-panel {
-    height: 75vh;
-    margin-top: 5vh;
-}
+/* end carousel styles */
 
-.contact-div {
-    height: 65vh;
-}
+/* Footer Styles */
 
-.overhead-panel {
-    margin: 9vh 0 0 2vw;
-    left: -200%;
-}
-
-.navbar-inverse .navbar-nav>li>a {
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
     color: white;
-}
-
-.panel {
-    opacity: 0.8;
-}
-
-.modal-content {
-    width: 85%;
-}
-
-#modal-video {
-    width: 100%;
-}
-
-.video {
-    width: 100%;
+    padding-left: 0;
 }
 
 .footer>span {
@@ -246,26 +199,135 @@ div.carousel .fill {
     padding-top: 2vh;
 }
 
-address {
+/* end footer styles */
+
+/* Home Page Styles */
+
+.home-panel {
+    margin-bottom: 13px;
+}
+
+.home-content {
+    width: 45vw;
+    height: 80vh;
+    margin-top: 8vh;
+    position: relative;
+    overflow: hidden;
+    right: 200%;
+}
+
+.home-text {
+    font-size: 1.3em;
+}
+
+.home-text span {
     float: right;
+    clear: both;
 }
 
-.list-social-icons>li>a {
-    color: #FF0000;
+/* end home page styles */
+
+/* Overhead Page Styles */
+
+.overhead-panel {
+    margin: 9vh 0 0 2vw;
+    left: -200%;
 }
 
-/* accessories page styles */
-
-.carousel-caption {
-    color: #FFFF3C;
-    text-shadow: -1.5px 0 black, 0 1px black, 1px 0 black, 0 -1.5px black;
+.service-text {
+    margin-top: 10%;
 }
+
+/* end overhead page styles */
+
+/* Garage Flooring Page Styles */
+
+.special {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: auto;
+}
+
+.video-text {
+    clear: both;
+}
+
+.garage-flooring {
+    margin: 0;
+}
+
+.flooring-sub {
+    text-align: center;
+}
+
+.flooring {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.flooring-panel {
+    height: 75vh;
+    margin-top: 6vh;
+}
+
+/* modal css */
+.modal-content {
+    width: 85%;
+    /*    background-color: rgba(247, 10, 10, 0.3);*/
+    background-color: rgba(0, 0, 0, 0.6);
+    color: yellow;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.modal-header button {
+    color: yellow;
+    opacity: 1;
+}
+
+.modal-header button:hover {
+    color: lightpink;
+}
+
+.modal-footer button {
+    background-color: red;
+}
+
+.modal-body img {
+    width: 90%;
+    margin: auto;
+}
+
+#modal-video {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+}
+
+/* used instead of deal image on mobile view */
+.mobile-deal {
+    width: 100%;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+/* end garage flooring page styles */
+
+/* Accessories Page Styles */
 
 .accessories-div {
     border: none;
-    height: 75vh;
+    height: 70vh;
     overflow-y: scroll;
-    margin: 6vh 0 0 5vh;
+    margin: 7vh 0 0 5vh;
 }
 
 .delivery {
@@ -283,114 +345,61 @@ address {
     font-size: 1.8rem;
 }
 
-.navbar-brand {
-    padding: 3px;
+/* end accessories page styles */
+
+/* About Us Page Styles */
+
+
+/* end about us page styles */
+
+/* Contact Page Styles */
+
+.contact-div {
+    height: 65vh;
 }
 
-.mobile-deal {
-    width: 100%;
-    color: white;
+.contact-panel {
+    height: 75vh;
+    margin-top: 5vh;
+}
+
+/*   !!!!!!!!! check to see if this class is being used !!!!!!!!!!! */
+address {
+    float: right;
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+.lightblue:hover {
+    color: lightgreen;
+}
+
+.list-social-icons>li>a {
+    color: #FF0000;
+}
+
+form>button {
+    color: yellow;
     background-color: red;
-    padding: 5px;
-    text-align: center;
+    margin-top: 10px;
+}
+
+.help-block {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: yellow !important;
+}
+
+.help-block ul {
     margin: 0;
 }
 
-/* Responsive Styles */
+/* end contact page styles */
 
-@media(min-height:915px) and (min-width:1800px) {
-    .home-body {
-        overflow: hidden;
-    }
-}
-
-@media(max-width: 1700px) {
-
-    .special {
-        width: 25%;
-    }
-}
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
-
-    .contact-panel {
-        margin-top: 8%;
-    }
-
-    .home-text span {
-        float: none;
-        clear: none;
-    }
-
-    div.carousel {
-        margin-top: 4%;
-    }
-
-
-    .special {
-        top: 15px;
-        width: 18%;
-    }
-}
-
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    div.carousel .carousel {
-        height: 70%;
-    }
-
-    .contact-panel {
-        margin-top: 2%;
-    }
-
-
-    header.carousel {
-        margin-top: 0;
-    }
-
-    .special {
-        width: 23%;
-    }
-
-}
-
-@media(max-width:400px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 50%;
-    }
-
-    .navbar-brand {
-        width: 35%;
-        padding-top: 10px;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .page-header {
-        font-size: 2em;
-    }
-
-    .special {
-        display: none;
-    }
-
-}
-
-
-/* animations */
+/* Animation */
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -406,11 +415,13 @@ address {
     animation-fill-mode: both;
 }
 
-.animated3 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+.animated8 {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
 }
 
 .animated10 {
@@ -423,7 +434,7 @@ address {
 }
 
 
-.animated.infinite, .animated10.infinite {
+.animated8.infinite, .animated10.infinite {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
@@ -522,4 +533,101 @@ address {
     50% {opacity: 0;}
     75% {opacity: 0.5;}
     100% {opacity: 1;}
-} 
+}
+
+/* end animation */
+
+/* Media Queries */
+
+@media(min-height:915px) and (min-width:1800px) {
+    .home-body {
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 1700px) {
+
+    .special {
+        width: 25%;
+    }
+}
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+
+    .contact-panel {
+        margin-top: 8%;
+    }
+
+    .home-text span {
+        float: none;
+        clear: none;
+    }
+
+    div.carousel {
+        margin-top: 4%;
+    }
+
+
+    .special {
+        top: 15px;
+        width: 18%;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    div.carousel .carousel {
+        height: 70%;
+    }
+
+    .contact-panel {
+        margin-top: 2%;
+    }
+
+
+    header.carousel {
+        margin-top: 0;
+    }
+
+    .special {
+        width: 23%;
+    }
+
+}
+
+@media(max-width:400px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 50%;
+    }
+
+    .navbar-brand {
+        width: 35%;
+        padding-top: 10px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .page-header {
+        font-size: 2em;
+    }
+
+    .special {
+        display: none;
+    }
+
+}
+
+/* end media queries */
