@@ -199,6 +199,15 @@ div.right-side {
     padding-top: 2vh;
 }
 
+.flex span a {
+    color: white;
+}
+
+.flex span a:hover {
+    color: lightblue;
+}
+
+
 /* end footer styles */
 
 /* Home Page Styles */

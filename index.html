@@ -136,13 +136,13 @@
 <!-- Footer -->
 <div class="footer container col-xs-12">
     <footer class="footer">
-        <div class="">
+        <div class="row">
             <div class="col-lg-10 col-lg-offset-1 flex">
-                <span>| Copyright &copy; Smart Garage Pros 2016 |</span>
-                <span>| 866-396-7282 (toll free) |</span>
+                <span><a href="tel:+1-866-396-7282">| 866-396-7282 (toll free) |</a></span>
+                <span><a href="tel:+1-866-396-7282">| Call for More Info or a Free Estimate |</a></span>
                 <span>| Serving All of Southern California |</span>
-                <span>| Call for More Info or a Free Estimate |</span>
                 <span>| License #670978 |</span>
+                <span>| Copyright &copy; Smart Garage Pros 2016 |</span>
             </div>
         </div>
     </footer>
@@ -157,7 +157,12 @@
 <script src="js/bootstrap.min.js"></script>
 
 <!-- Script to Activate the Carousel -->
-<script src="js/script.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 4000 //changes the speed
+    });
+</script>
+
 
 </body>
 
