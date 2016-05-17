@@ -73,6 +73,13 @@ sub {
     color: yellow;
 }
 
+.large {
+    font-size: 2rem;
+}
+
+.medium li {
+    font-size: 1.5rem;
+}
 /* end global styles */
 
 /* Navbar Styles */
