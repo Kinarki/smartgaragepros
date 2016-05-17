@@ -1,4 +1,4 @@
-/* Initial styling set up for screen size 1367 x 617 */
+/* Initial styling set up for body size 1367 x 617 */
 
 /* Global Styles */
 
@@ -62,6 +62,15 @@ body {
 ::-webkit-scrollbar-button {
     background-color: darkgray;
     outline: 1px solid black;
+}
+
+.red {
+    color: red;
+}
+
+sub {
+    font-size: 1rem;
+    color: yellow;
 }
 
 /* end global styles */
@@ -207,7 +216,6 @@ div.right-side {
     color: lightblue;
 }
 
-
 /* end footer styles */
 
 /* Home Page Styles */
@@ -229,9 +237,13 @@ div.right-side {
     font-size: 1.3em;
 }
 
-.home-text span {
+.home-text.service-text span {
     float: right;
     clear: both;
+}
+
+.home-text ul li {
+    font-size: 1.5rem;
 }
 
 /* end home page styles */
@@ -255,7 +267,7 @@ div.right-side {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20%;
+    width: 25%;
     height: auto;
 }
 
@@ -280,6 +292,10 @@ div.right-side {
 .flooring-panel {
     height: 75vh;
     margin-top: 6vh;
+}
+
+address {
+    float: right;
 }
 
 /* modal css */
@@ -358,6 +374,9 @@ div.right-side {
 
 /* About Us Page Styles */
 
+.about-us {
+    text-align: center;
+}
 
 /* end about us page styles */
 
@@ -370,11 +389,6 @@ div.right-side {
 .contact-panel {
     height: 75vh;
     margin-top: 5vh;
-}
-
-/*   !!!!!!!!! check to see if this class is being used !!!!!!!!!!! */
-address {
-    float: right;
 }
 
 .lightblue {
@@ -408,7 +422,7 @@ form>button {
 
 /* end contact page styles */
 
-/* Animation */
+/* Animations */
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -473,7 +487,6 @@ form>button {
 .carousel-fade .carousel-control {
     z-index: 2;
 }
-
 
 .return-right {
     -webkit-animation-name: return-right;
@@ -548,17 +561,17 @@ form>button {
 
 /* Media Queries */
 
-@media(min-height:915px) and (min-width:1800px) {
-    .home-body {
-        overflow: hidden;
-    }
+@media(min-height:715px) {
+
 }
 
 @media(max-width: 1700px) {
 
-    .special {
-        width: 25%;
-    }
+    /*
+        .special {
+            width: 25%;
+        }
+    */
 }
 
 @media(max-width:991px) {
