@@ -60,7 +60,7 @@ body {
 }
 
 ::-webkit-scrollbar-button {
-    background-color: darkgray;
+    background-color: #555;
     outline: 1px solid black;
 }
 
