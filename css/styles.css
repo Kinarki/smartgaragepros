@@ -51,16 +51,17 @@ body {
 }
 
 ::-webkit-scrollbar-track-piece {
-    background-color: #555;
+    background-color: #C4AB34;
+    /*    background-color: #555;*/
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
+    background-color: red;
     outline: 1px solid slategrey;
 }
 
 ::-webkit-scrollbar-button {
-    background-color: #555;
+    background-color: yellow;
     outline: 1px solid black;
 }
 
@@ -111,8 +112,13 @@ sub {
 .logo {
     width: 60%;
     height: auto;
-    z-index: 500;
     position: relative;
+}
+
+.logo-sub {
+    position: absolute;
+    top: 50px;
+    left: 215px;
 }
 
 /* slogan css */
@@ -254,6 +260,11 @@ div.right-side {
     font-size: 1.5rem;
 }
 
+.overflow {
+    overflow-y: scroll;
+    height: 30vh;
+}
+
 /* end home page styles */
 
 /* Overhead Page Styles */
@@ -384,6 +395,12 @@ address {
 
 .about-us {
     text-align: center;
+}
+
+.about-us-pic {
+    float: left;
+    width: 50%;
+    height: auto;
 }
 
 /* end about us page styles */
